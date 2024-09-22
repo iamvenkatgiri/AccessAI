@@ -13,7 +13,7 @@ function App() {
 	const [loading, setLoading] = useState(false);
 	const [submitted, setSubmitted] = useState(false);
 	const [url, setUrl] = useState("");
-	const apiUrl = "http://52.23.163.153:5000/api";
+	const apiUrl = "https://52.23.163.153:5000/api";
 
 	const navigate = useNavigate();
 	const fileInputRef = useRef(null);
