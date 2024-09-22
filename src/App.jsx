@@ -120,7 +120,7 @@ function App() {
 				<div className="hero-content">
 					<div className="hero-left">
 						<h1>AccessAI</h1>
-						<p>Revolutionizing web accessibility</p>
+						<p>Revolutionizing Web Accessibility</p>
 					</div>
 				</div>
 			</header>
