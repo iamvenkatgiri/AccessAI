@@ -1,0 +1,255 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Montserrat", sans-serif;
+	background-color: #f5f5f5;
+	color: #333;
+	margin: 0;
+	padding: 0;
+}
+
+.app {
+	text-align: center;
+}
+
+/* Hero Section */
+.hero-section {
+	height: 100vh;
+	background-image: linear-gradient(
+			to right,
+			rgba(0, 0, 0, 1) 0%,
+			rgba(0, 0, 0, 0.7) 30%,
+			rgba(0, 0, 0, 0) 100%
+		),
+		url("./assets/newimage.png");
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.hero-content {
+	padding: 40px;
+	border-radius: 10px;
+	text-align: left;
+	max-width: 50%;
+	margin-left: 5%;
+}
+
+.hero-left h1 {
+	font-size: 3rem;
+	margin-bottom: 20px;
+	color: #fff;
+}
+
+.hero-left p {
+	font-size: 1.2rem;
+	color: #fff;
+}
+
+.content-wrapper {
+	display: flex;
+	transition: all 0.5s ease;
+	max-width: 100%; /* Allow it to take full width */
+	margin: 20px auto; /* Center container */
+	overflow: hidden; /* Prevent any child overflow */
+	padding: 20px;
+}
+
+.content-wrapper.submitted {
+	flex-wrap: wrap; /* Wrap items if necessary */
+}
+
+/* Input Section */
+.input-section {
+	flex: 0 0 100%;
+	padding: 50px 20px;
+	background-color: #fff;
+	border-radius: 15px;
+	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+	border: 2px dashed #5a9abf;
+	transition: all 0.5s ease;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.content-wrapper.submitted .input-section {
+	flex: 0 0 50%;
+	margin-right: 20px;
+}
+
+h2 {
+	font-size: 2rem;
+	color: #272838;
+	margin-bottom: 20px;
+}
+
+textarea {
+	width: 100%;
+	padding: 15px;
+	border-radius: 10px;
+	border: 2px dashed #5a9abf;
+	margin-bottom: 20px;
+	font-size: 1.1rem;
+	background-color: #f0f0f0;
+	font-family: "Roboto Mono", monospace;
+}
+
+/* File Upload */
+.file-upload {
+	margin-bottom: 20px;
+	display: flex;
+	align-items: center;
+}
+
+.file-input {
+	display: none;
+}
+
+.file-upload-button {
+	padding: 10px 20px;
+	background-color: #5a9abf;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 1rem;
+	margin-right: 10px;
+}
+
+.file-name {
+	font-size: 0.9rem;
+	color: #666;
+}
+
+.image-preview {
+	max-width: 100%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.image-preview img {
+	max-width: 100%;
+	height: auto;
+}
+
+.open-simulation-button {
+	padding: 10px 20px; /* Similar padding */
+	background-color: #5a9abf; /* Match background color */
+	color: #fff; /* White text color */
+	border: none; /* No border */
+	border-radius: 5px; /* Rounded corners */
+	cursor: pointer; /* Pointer on hover */
+	font-size: 1rem; /* Consistent font size */
+	transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.open-simulation-button:disabled {
+	background-color: #c0c0c0; /* Disabled state color */
+	cursor: not-allowed; /* Not allowed cursor */
+}
+
+.open-simulation-button:hover:not(:disabled) {
+	background-color: #4a8bad; /* Darker color on hover */
+}
+
+/* Submit Button */
+.submit-button {
+	padding: 15px 30px;
+	background-color: #5a9abf;
+	color: #fff;
+	border: none;
+	border-radius: 20px;
+	cursor: pointer;
+	font-size: 1.2rem;
+	transition: background-color 0.3s ease;
+}
+
+.submit-button:disabled {
+	background-color: #c0c0c0;
+	cursor: not-allowed;
+}
+
+.submit-button:hover:not(:disabled) {
+	background-color: #4a8bad;
+}
+
+.output-section {
+	flex: 1; /* Allow it to grow and fill available space */
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 15px;
+	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+	max-width: 800px; /* Keep it within a maximum width */
+	width: 100%; /* Ensure it uses the full width of the container */
+	display: flex;
+	flex-direction: column; /* Allow stacking of children */
+	align-items: center; /* Center content */
+	opacity: 0; /* Hidden by default */
+	transition: opacity 0.5s ease;
+	overflow: hidden; /* Prevent overflow */
+}
+
+.content-wrapper.submitted .output-section {
+	display: block;
+	opacity: 1;
+}
+
+.suggestion-section,
+.visual-suggestion-section {
+	padding: 20px; /* Padding on all sides */
+	background-color: #f9f9f9;
+	border-radius: 10px;
+	margin-top: 20px;
+	max-width: 800px; /* Limit width */
+	width: 100%; /* Use full width available */
+}
+
+h3 {
+	color: #333;
+	font-size: 1.5rem;
+	margin-bottom: 15px;
+}
+
+/* Simulation Input */
+.simulation-section {
+	padding-top: 30px;
+}
+
+.simulation-section input {
+	padding: 10px;
+	border-radius: 5px;
+	border: 2px solid #5a9abf;
+	font-size: 1rem;
+	margin-right: 10px;
+}
+
+/* Loading Text */
+.loading-text {
+	font-size: 1.2rem;
+	color: #5a9abf;
+	text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+	.content-wrapper {
+		flex-direction: column;
+		max-width: 100%;
+	}
+
+	.content-wrapper.submitted {
+		max-width: 100%;
+	}
+
+	.content-wrapper.submitted .input-section,
+	.output-section {
+		flex: 0 0 100%;
+		margin: 20px 0;
+	}
+}
