@@ -13,7 +13,7 @@ function App() {
 	const [loading, setLoading] = useState(false);
 	const [submitted, setSubmitted] = useState(false);
 	const [url, setUrl] = useState("");
-	const apiUrl = "https://u71feym9g6.execute-api.us-east-1.amazonaws.com/TestStage/api";
+	const apiUrl = "https://gwnpw5ju4l.execute-api.us-east-1.amazonaws.com/Stage3/api";
 
 	const navigate = useNavigate();
 	const fileInputRef = useRef(null);
