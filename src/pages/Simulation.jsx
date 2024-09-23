@@ -114,11 +114,10 @@ function Simulation() {
 								{[
 									{ name: "Normal Vision", value: "" },
 									{
-										name: "Red-Green Colorblindness (Deuteranopia)",
-										value: "deuteranopia",
+										name: "Red-Green Color Blindness (Deuteranopia/Protanopia)",
+										value: "protanopia",
 									},
-									{ name: "Red-Green Colorblindness (Protanopia)", value: "protanopia" },
-									{ name: "Blue-Yellow Colorblindness (Tritanopia)", value: "tritanopia" },
+									{ name: "Blue-Yellow Color Blindness (Tritanopia)", value: "tritanopia" },
 									{ name: "Achromatopsia", value: "achromatopsia" },
 									{ name: "Low Vision", value: "low-vision" },
 									{ name: "High Contrast", value: "high-contrast" },
